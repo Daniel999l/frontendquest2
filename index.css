@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    overflow-x: hidden;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the body takes up the full viewport height */
+    margin: 0;
+}
+@media screen and (max-width: 767px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 25px; /* Override padding-top for smaller screens */
+        padding-bottom: 25px; /* Override padding-bottom for smaller screens */
+    }
+}
+.main {
+    margin-top: 25px;
+    margin-bottom: 25px;
+     border-radius: 15px;
+    background-color: #1f1f1f;
+    width: 320px;
+    height: 500px;
+    display: flex; /* Use Flexbox */
+        flex-direction: column; /* Arrange items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: space-between;
+}
+.pic {
+    margin-top: 25px;
+    display: flex; /* Use Flexbox */
+        flex-direction: column; /* Arrange items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: space-between;
+}
+.round {
+    width: 70px; /* Desired width for the image */
+    height: 70px; /* Desired height for the image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-image: url('avatar-jessica.jpeg'); /* Set the background image */
+    background-size: contain; /* Scale the background image to fit within the container without cropping or zooming */
+    background-position: center;
+    border-radius: 50%;
+}
+.next {
+    padding-top: 15px;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+.t1 {
+    margin-bottom: 3px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+.t2 {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    color: hsl(75, 94%, 57%);
+}
+.last {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 80%);
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+.inside {
+    font-weight: 600;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    background-color: #333333;
+    border-radius: 5px;
+    height: 40px;
+    width: 80%;
+}
+.sec {
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.inside:active {
+    transform: scale(0.9); /* Scale down to 90% of the original size */
+}

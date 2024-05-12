@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd-Mentor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="pic">
+            <div class="round">
+
+            </div>
+            <div class="next">
+                <div class="t1">
+                    <p>Jessica Randall</p>
+                </div>
+                <div class="t2">
+                    <p>London, United Kingdom</p>
+                </div>
+            </div>
+            <div class="last">
+                <p>"Front-end developer and avid reader."</p>
+            </div>
+        </div>
+        <div class="sec">
+            <div class="inside" id="github">
+                <p>Github</p>
+            </div>
+            <div class="inside" id="frontendMentor">
+                <p>Frontend Mentor</p>
+            </div>
+            <div class="inside" id="linkedin">
+                <p>Linkedin</p>
+            </div>
+            <div class="inside" id="twitter">
+                <p>Twitter</p>
+            </div>
+            <div class="inside" id="instagram">
+                <p>Instagram</p>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // Get references to the div elements
+    const githubDiv = document.getElementById('github');
+    const frontendMentorDiv = document.getElementById('frontendMentor');
+    const linkedinDiv = document.getElementById('linkedin');
+    const twitterDiv = document.getElementById('twitter');
+    const instagramDiv = document.getElementById('instagram');
+
+    // Add click event listeners to the divs
+    githubDiv.addEventListener('click', function() {
+        window.location.href = 'https://github.com/Daniel999l/';
+    });
+
+    frontendMentorDiv.addEventListener('click', function() {
+        window.location.href = 'https://www.frontendmentor.io/profile/Daniel999l';
+    });
+
+    linkedinDiv.addEventListener('click', function() {
+        window.location.href = 'https://www.linkedin.com/in/daniel999l/';
+    });
+
+    twitterDiv.addEventListener('click', function() {
+        window.location.href = 'https://twitter.com/daifreenft';
+    });
+
+    instagramDiv.addEventListener('click', function() {
+        alert("I don't have an Instagram account yet.");
+    });
+</script>
